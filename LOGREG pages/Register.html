@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>
+        Registration </title>
+        <link rel="icon" href="Youtube.png" type="image/png">
+        <link rel="Stylesheet" href="register.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <video autoplay muted loop class="video-bg">
+        <source src="background.mp4">
+    </video>
+    <center>
+        <div class="header">
+        <h2 style="color:white;">TITLE BASED ON THE WEBSITE </h2>
+        </div>
+        <h4 style="color:white;">WELCOME</h4>
+    <form class="web" action="login.html" target="_blank">
+        <label class="label"><b>Enter your name</b></label><br>
+        <input type="name" required placeholder="eg.Yogesh G" class="adam"/><br>
+        <br><br>
+        <label class="label"><b>Enter your Email</b></label><br>
+        <input type="email" required placeholder="eg.john@gmail.com" class="adam"/><br>
+        <br><br>
+        <label class="label"><b>Enter the phone number</b></label><br>
+        <input type="tel" required pattern="[0-9]{5}\ \[0-9]{5}" placeholder="eg.98567 42351" class="adam"/><br>
+        <br>
+        <label class="label">
+            <b>Enter your Country</b> 
+        </label><br>
+        <input type="text" required placeholder="eg.India" class="adam"/><br>
+        <br><br>
+        <label class="label"><b>Enter your Zipcode</b></label><br>
+        <input type="tel" required pattern="[0-9]{6}" placeholder="eg.626520" class="adam"/><br>
+        <br>
+        <h4 style="color: white;">Choose your gender</h4>
+        <input type="radio" id="name" name="gender" value="Male"/>
+        <label for="name">Male</label>
+        <input type="radio" id="name" name="gender" value="Female"/>
+        <label for="name">Female</label>
+        <input type="radio" id="name" name="gender" value="Others"/>
+        <label for="name">Others</label><br>
+        <br>
+        <label class="label"><b>Enter New Pasword</b></label><br>
+        <input id="pass" type="name" required placeholder="eg.Yogi_25 (contain one special character)" class="adam"/><br>
+        <br>
+        <label class="label"><b>Confirm Password</b></label><br>
+        <input id="pass2" type="password" required placeholder="(Must equal to new password)" class="adam"/><br>
+        <br>
+        <!-- <button id="box" class="tappa" onclick="checkpasswords()">BOOM!</button>  -->
+        <input type="submit" class="tappa" value="Sign Up!"/>
+    </form>
+    <div class="footer">
+        <div class="footertext">
+            <footer>&COPY; Copyrights/Act 2024/This Site has been created by Yogii</footer>
+        </div>
+    </div>
+    </center>
+
+    <script>
+        var a = document.getElementById("pass").addEventListener;
+        var b = document.getElementById("pass2").value;
+        var box = document.getElementById("box");
+
+        function checkPasswords() {
+            if (a == b) {
+                window.location.href='login.html'
+            }
+            else {
+                alert("Passwords do not match");
+            }
+    }
+    </script>
+</body>
+</html>
